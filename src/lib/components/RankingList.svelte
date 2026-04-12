@@ -20,6 +20,7 @@ RankingList.svelte — A container for RankingCard items with an optional title.
     border: 1px solid var(--color-border, #ddd);
     border-radius: 4px;
     overflow: hidden;
+    color: var(--color-medium);
     background: var(--color-white, #fff);
   }
 
@@ -28,15 +29,23 @@ RankingList.svelte — A container for RankingCard items with an optional title.
     padding: var(--spacing-sm, 0.75rem) var(--spacing-md, 1rem);
     font-size: 0.875rem;
     font-weight: 700;
+    color: var(--color-white, #fff);
     text-transform: uppercase;
     letter-spacing: 0.05em;
-    background: var(--color-light-gray, #f5f5f5);
+    background: var(--color-medium, #f5f5f5);
     border-bottom: 1px solid var(--color-border, #ddd);
   }
 
   .ranking-list-items {
+    color: var(--color-text, #333);
     :global(> :last-child) {
       border-bottom: none;
+      
     }
+  }
+
+  .h3 {
+    color: var(--color-text, #333);
+
   }
 </style>

@@ -20,11 +20,12 @@ of an article.
 
   .methodology-box {
     border-top: var(--border-width-accent) solid var(--color-accent);
-    background-color: var(--color-light-gray);
+    background-color: var(--color-cream);
     padding: var(--spacing-md);
     margin-top: var(--spacing-xl);
     margin-bottom: var(--spacing-lg);
     max-width: var(--max-width);
+    color: var(--color-accent);
   }
 
   .methodology-title {
@@ -33,7 +34,7 @@ of an article.
     font-weight: var(--font-weight-bold);
     text-transform: uppercase;
     letter-spacing: var(--letter-spacing-wider);
-    color: var(--color-dark);
+    color: var(--color-medium);
     margin-bottom: var(--spacing-xs);
   }
 

@@ -28,7 +28,6 @@ USAGE EXAMPLE:
       day: 'numeric',
     })
       .format(d)
-      .toUpperCase();
   }
 </script>
 
@@ -40,10 +39,9 @@ USAGE EXAMPLE:
 
 <style lang="scss">
   .pubdate {
-    font-family: var(--font-sans);
+    font-family: "Comic Relief", system-ui, -apple-system, sans-serif;
     font-size: var(--font-size-sm);
-    color: var(--color-medium-gray);
-    text-transform: uppercase;
+    color: var(--color-medium);
     letter-spacing: var(--letter-spacing-wider);
     margin: var(--spacing-xxs) 0;
   }

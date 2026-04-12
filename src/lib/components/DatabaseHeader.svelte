@@ -21,7 +21,7 @@ layout is single-column and backward-compatible.
     description = '',
     byline = '',
     date = '',
-    bgColor = 'var(--color-light-gray)',
+    bgColor = 'var(--color-gray)',
     children,
     graphic,
   } = $props();
@@ -56,7 +56,12 @@ layout is single-column and backward-compatible.
 </header>
 
 <style lang="scss">
-  @use '../styles' as *;
+  @use '../styles' as *; @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap');
+
+  :global(body) {
+    font-family: "Comic Relief", system-ui, -apple-system, sans-serif;
+
+  }
 
   .hero-header {
     width: 100%;
@@ -86,6 +91,10 @@ layout is single-column and backward-compatible.
   /* Override Headline margin and desktop font size for the hero context */
   .hero-content :global(.headline) {
     margin-bottom: var(--spacing-xs);
+    font-family: "Comic Relief", system-ui, -apple-system, sans-serif;
+    font-size: 2rem;
+    color: var(--color-text);
+    margin: var(--spacing-sm) 0;
   }
 
   .hero-description {
@@ -107,6 +116,14 @@ layout is single-column and backward-compatible.
     justify-content: center;
     max-width: 400px;
     margin: 0 auto;
+  }
+
+  .kicker {
+    font-family: "Comic Relief", system-ui, -apple-system, sans-serif;
+    font-size: .75rem;
+    color: var(--color-medium);
+    margin: var(--spacing-sm) 0;
+
   }
 
   @include tablet {

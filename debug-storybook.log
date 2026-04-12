@@ -1,0 +1,26 @@
+[16:27:57.350] [INFO] storybook v10.2.19
+[16:28:00.170] [PROMPT] Port 6006 is not available. 
+Would you like to run Storybook on port 6007 instead? {"choice":true}
+[16:28:00.439] [DEBUG] Getting package.json info for /Users/ashleymowreader/Library/CloudStorage/GoogleDrive-a.mowreader32@journalism.cuny.edu/My Drive/Coding the News/storybook/package.json...
+[16:28:01.470] [DEBUG] Serving static files from [36mstatic[39m at [36m/[39m
+[16:28:01.473] [INFO] Starting...
+[16:28:02.039] [DEBUG] Starting preview..
+[16:28:02.050] [WARN] 🚨 Unable to index files:
+- ./src/stories/DesignTokens.mdx: Could not parse expression with acorn
+- ./src/stories/Introduction.mdx: Could not parse expression with acorn
+[16:28:02.052] [ERROR] Failed to build the preview
+[16:28:02.053] [ERROR] Error: [38;2;241;97;97mUnable to index files:
+- ./src/stories/DesignTokens.mdx: Could not parse expression with acorn
+- ./src/stories/Introduction.mdx: Could not parse expression with acorn[39m
+    at _StoryIndexGenerator.getIndexAndStats (file:///Users/ashleymowreader/Library/CloudStorage/GoogleDrive-a.mowreader32@journalism.cuny.edu/My%20Drive/Coding%20the%20News/storybook/node_modules/storybook/dist/core-server/index.js:6087:15)
+    at async _StoryIndexGenerator.getIndex (file:///Users/ashleymowreader/Library/CloudStorage/GoogleDrive-a.mowreader32@journalism.cuny.edu/My%20Drive/Coding%20the%20News/storybook/node_modules/storybook/dist/core-server/index.js:6076:13)
+    at async getOptimizeDeps (file:///Users/ashleymowreader/Library/CloudStorage/GoogleDrive-a.mowreader32@journalism.cuny.edu/My%20Drive/Coding%20the%20News/storybook/node_modules/@storybook/builder-vite/dist/index.js:1879:15)
+    at async createViteServer (file:///Users/ashleymowreader/Library/CloudStorage/GoogleDrive-a.mowreader32@journalism.cuny.edu/My%20Drive/Coding%20the%20News/storybook/node_modules/@storybook/builder-vite/dist/index.js:1906:19)
+    at async Module.start (file:///Users/ashleymowreader/Library/CloudStorage/GoogleDrive-a.mowreader32@journalism.cuny.edu/My%20Drive/Coding%20the%20News/storybook/node_modules/@storybook/builder-vite/dist/index.js:1934:17)
+    at async storybookDevServer (file:///Users/ashleymowreader/Library/CloudStorage/GoogleDrive-a.mowreader32@journalism.cuny.edu/My%20Drive/Coding%20the%20News/storybook/node_modules/storybook/dist/core-server/index.js:7295:83)
+    at async buildOrThrow (file:///Users/ashleymowreader/Library/CloudStorage/GoogleDrive-a.mowreader32@journalism.cuny.edu/My%20Drive/Coding%20the%20News/storybook/node_modules/storybook/dist/core-server/index.js:4506:12)
+    at async buildDevStandalone (file:///Users/ashleymowreader/Library/CloudStorage/GoogleDrive-a.mowreader32@journalism.cuny.edu/My%20Drive/Coding%20the%20News/storybook/node_modules/storybook/dist/core-server/index.js:7710:41)
+    at async withTelemetry (file:///Users/ashleymowreader/Library/CloudStorage/GoogleDrive-a.mowreader32@journalism.cuny.edu/My%20Drive/Coding%20the%20News/storybook/node_modules/storybook/dist/_node-chunks/chunk-FJZ625UU.js:218:12)
+    at async dev (file:///Users/ashleymowreader/Library/CloudStorage/GoogleDrive-a.mowreader32@journalism.cuny.edu/My%20Drive/Coding%20the%20News/storybook/node_modules/storybook/dist/bin/core.js:2734:3)
+[16:28:02.055] [WARN] Broken build, fix the error above.
+You may need to refresh the browser.

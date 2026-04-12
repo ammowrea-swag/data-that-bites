@@ -1,10 +1,11 @@
-// Page settings
-// These values are passed to the layout to control what appears on the page.
+import dogs from '$lib/data/dogs.json';
+
 export function load() {
   return {
     // Set to false to hide the NYCity News Service header
-    showHeader: true,
+    showHeader: false,
     // Set to false to hide the site footer
-    showFooter: true,
+    showFooter: false,
+    dogs
   };
 }

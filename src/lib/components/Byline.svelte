@@ -20,9 +20,9 @@ USAGE EXAMPLE:
 
 <style lang="scss">
   .byline {
-    font-family: var(--font-sans);
+    font-family: "Comic Relief", system-ui, -apple-system, sans-serif;
     font-size: var(--font-size-base);
-    color: var(--color-medium-gray);
+    color: var(--color-medium);
     margin: var(--spacing-xxs) 0;
   }
 </style>

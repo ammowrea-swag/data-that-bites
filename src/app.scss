@@ -11,13 +11,14 @@
    CSS Custom Properties
    =========================================== */
 :root {
-  /* NYCity News Service Colors */
-  --color-accent: #0033a1; /* CUNY Blue (PMS 286) */
-  --color-dark: #1a1a1a;
-  --color-text: #333333;
+  /* Dog Page Colors */
+  --color-accent: #b39ddb; /* Purple! */
+  --color-dark: #512f1c33;
+  --color-text: #000000;
+  --color-gray: #e9d5f5;
   --color-white: #ffffff;
-  --color-light-gray: #f5f5f5;
-  --color-medium-gray: #666666;
+  --color-cream: #fffaf2;
+  --color-medium: #793c98;
   --color-border: #e0e0e0;
   --color-shadow: rgba(0, 0, 0, 0.1);
 
@@ -145,11 +146,11 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: var(--font-serif);
+  font-family: "Comic Relief", sans-serif;
   font-weight: var(--font-weight-normal);
   line-height: var(--leading-tight);
   margin-bottom: var(--spacing-sm);
-  color: var(--color-dark);
+  color: var(--color-text);
 }
 
 h1 {
