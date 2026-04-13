@@ -13,6 +13,11 @@
 import adapter from '@sveltejs/adapter-static';
 import { vitePreprocess } from '@sveltejs/vite-plugin-svelte';
 
+const isGitHubActions = process.env.GITHUB_ACTIONS === 'true';
+const repoName = process.env.GITHUB_REPOSITORY?.split('/')[1];
+const gitHubPagesBase = isGitHubActions && repoName ? `/${repoName}` : '';
+const basePath = gitHubPagesBase || process.env.BASE_PATH || '';
+
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
   // Enable SCSS preprocessing in <style lang="scss"> blocks
@@ -27,11 +32,11 @@ const config = {
       precompress: false, // Don't pre-compress files
       strict: true, // Fail if any routes can't be prerendered
     }),
-    // The base path is set via environment variable during build
-    // This is configured automatically in .github/workflows/deploy.yml
-    // It's needed because GitHub Pages serves from a subdirectory
+    // On GitHub Actions, always use the repository name as the base path.
+    // This prevents accidental wrong deploy paths like /storybook.
+    // Outside CI, BASE_PATH can still be set manually for local test builds.
     paths: {
-      base: process.env.BASE_PATH || '',
+      base: basePath,
       relative: false,
     },
   },
