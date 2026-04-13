@@ -1,4 +1,5 @@
 <script>
+  import { base } from '$app/paths';
   import MethodologyBox from '$lib/components/MethodologyBox.svelte';
 
   let { data } = $props();
@@ -31,7 +32,7 @@
 
 <div class="container breed-page">
   <header class="breed-header">
-    <a class="back-link" href="/">← Back to rankings</a>
+    <a class="back-link" href="{base}/">← Back to rankings</a>
 
     <div class="breed-copy">
       <p class="eyebrow">Breed detail page</p>
